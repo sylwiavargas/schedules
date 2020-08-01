@@ -33,19 +33,19 @@ In order to not leave you feeling tricked, I will gradually fill out this table 
 
 <table>
 <tr>
-    <td> 🥚 </td>
-    <td> 🥣 </td>
-    <td> 🎂 </td>
+    <td style="text-align:center" width="150px"> 🥚 </td>
+    <td style="text-align:center" width="150px"> 🥣 </td>
+    <td style="text-align:center" width="150px"> 🎂 </td>
 </tr>
 <tr>
-    <td> <code>def name=(name)</code> </td>
-    <td> ? </td>
-    <td> ? </td>
+    <td style="text-align:center" width="150px"> <code>def name=(name)</code> </td>
+    <td style="text-align:center" width="150px"> ? </td>
+    <td style="text-align:center" width="150px"> ? </td>
 </tr>
 <tr>
-    <td> <code>def name</code> </td>
-    <td> ? </td>
-    <td> ? </td>
+    <td style="text-align:center" width="150px"> <code>def name</code> </td>
+    <td style="text-align:center" width="150px"> ? </td>
+    <td style="text-align:center" width="150px"> ? </td>
 </tr>
 </table>
 
@@ -62,7 +62,7 @@ Week one of every module is designated for you to get exposure to different topi
 - connect two (or more!) classes together,
 - use `map`, `find`, `select` and `each` on instances of classes.
 
-<hr 👾/>
+<hr style="height:1px" />
 
 ### W1 Monday
 
@@ -119,7 +119,7 @@ Topics In OO - Self In Ruby
 - **Self Quiz** ⭐️
 - **Self Bookend** ⭐️
 
-<hr 👾/>
+<hr style="height:1px" />
 
 ### W1 Tuesday
 
@@ -200,7 +200,7 @@ Topics In OO - Object Relationships In Ruby
 - **Object Relationships Quiz** ⭐️
 - **Object Relationships Bookend** ⭐️
 
-<hr 👾/>
+<hr style="height:1px" />
 
 ### W1 Thursday
 
@@ -227,7 +227,7 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 - **OO Challenge Relationships Practice(all easy ones)** ⭐️
 - OO Has Many Through Template
 
-<p style="margin-left:20%">👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 </p>
+<hr style="height:1px" />
 
 ### W1 Friday
 
@@ -265,7 +265,7 @@ Topics In OO - Object Inheritance In Ruby:
 - **Object Inheritance Bookend** ⭐️
 
 ---
-
+<!-- 
 <style>
 hr {
     border: none;
@@ -283,9 +283,4 @@ hr:after {
     position: relative;
     top: -13px;
 }
-
-td{
-    text-align: center;
-    width: 150px;
-}
-</style>
+</style> -->
