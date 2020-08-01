@@ -278,4 +278,4 @@ We'll publish it on Thursday.
 
 
 
-[lecture-link](https://flatironschool.zoom.us/j/92799283768?pwd=L20xVmc5VGFzUGRMcFRPaDdVazIzdz09)
+[lecture-link]: https://flatironschool.zoom.us/j/92799283768?pwd=L20xVmc5VGFzUGRMcFRPaDdVazIzdz09
