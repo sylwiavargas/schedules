@@ -253,8 +253,11 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 
 #### Homework Labs
 **TOP PRIORITY: Code Challenge Practice Labs** ⭐️⭐️⭐️
+
 Metaprogramming In Ruby: all
+
 Configuring Ruby Applications: all
+
 Topics In OO - Object Inheritance In Ruby:
 - Introduction To Object Inheritance In Ruby
 - **Intro To Inheritance** ⭐️
