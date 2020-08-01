@@ -6,14 +6,6 @@
 - [ ] Define attribute readers and writers
 - [ ] Use `attr_` macros instead of reader and writer methods
 
-## Analogy time 
-Now that we don't create a hash every single time we want to create a dog object. Instead, we created a blueprint for Ruby to do the job. For this lecture imagine Ruby as a person who assembles together gifts:
-
-<img src="buddy-the-elf.jpg" height="200px" width="auto" style="display:inline"  alt="a still from the Elf movie picturing Will Ferrel as an assembly line elf preparing toys for kids">
-
-Our elf needs to assemble thousands of different objects and each time checks the manual attached to them. Let's create a dog now:
-
-
 ## Pass arguments to `new` by defining an `initialize` method in class
 * Every dog needs some info:
     * fav_snack
