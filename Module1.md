@@ -63,6 +63,7 @@ Week one of every module is designated for you to get exposure to different topi
 - connect two (or more!) classes together,
 - use `map`, `find`, `select` and `each` on instances of classes.
 
+👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 
 ### W1 Monday
 
 | Time | Activity |
@@ -118,6 +119,7 @@ Topics In OO - Self In Ruby
 - **Self Quiz** ⭐️
 - **Self Bookend** ⭐️
 
+👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 
 ### W1 Tuesday
 
 | Time | Activity |
@@ -169,6 +171,7 @@ Topics In OO - Object Relationships In Ruby
 - Collaborating Objects
 - Collaborating Objects Lab
 
+👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 
 ### W1 Wednesday
 
 | Time | Activity |
@@ -195,6 +198,7 @@ Topics In OO - Object Relationships In Ruby
 - **Object Relationships Quiz** ⭐️
 - **Object Relationships Bookend** ⭐️
 
+👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 
 ### W1 Thursday
 
 | Time | Activity |
@@ -220,7 +224,7 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 - **OO Challenge Relationships Practice(all easy ones)** ⭐️
 - OO Has Many Through Template
 
-
+👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 
 ### W1 Friday
 
 | Time | Activity |
@@ -243,9 +247,9 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 
 #### Homework Labs
 **TOP PRIORITY: Code Challenge Practice Labs** ⭐️⭐️⭐️
-Metaprogramming In Ruby(all)
-Configuring Ruby Applications(all)
-Topics In OO - Object Inheritance In Ruby
+Metaprogramming In Ruby: all
+Configuring Ruby Applications: all
+Topics In OO - Object Inheritance In Ruby:
 - Introduction To Object Inheritance In Ruby
 - **Intro To Inheritance** ⭐️
 - **Intro To Inheritance Lab** ⭐️
@@ -255,3 +259,5 @@ Topics In OO - Object Inheritance In Ruby
 - **Super Lab** ⭐️
 - **Object Inheritance Quiz** ⭐️
 - **Object Inheritance Bookend** ⭐️
+
+---
