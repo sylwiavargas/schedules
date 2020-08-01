@@ -4,7 +4,7 @@
 - [Mod1 Expectations](#mod1-expectations)
 - [Week 1 Schedule](#week-1-schedule)
     - [W1 Monday](#w1-monday)
-    - [W1 Tuesday](#w1-tueday)
+    - [W1 Tuesday](#w1-tuesday)
     - [W1 Wednesday](#w1-wednesday)
     - [W1 Thursday](#w1-thursday)
     - [W1 Friday](#w1-friday)
@@ -109,6 +109,7 @@ Topics In OO - Building Complex Class Objects In Ruby
 - OO Design
 - Building Complex Class Objects In Ruby Quiz
 - Building Complex Class Objects In Ruby Bookend
+
 Topics In OO - Self In Ruby
 - **Introduction To Self In Ruby** ⭐️
 - The Fundamentals Of Self
@@ -116,3 +117,141 @@ Topics In OO - Self In Ruby
 - OO Counting Sentences
 - **Self Quiz** ⭐️
 - **Self Bookend** ⭐️
+
+### W1 Tuesday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 10:00| Day Labs|
+|10:00 - 11:00| Lecture: self, class variables and class methods|
+|11:05 - 11:35| Discussion Questions: Object Orientation in Ruby|
+|11:35 - 12:30| Day Labs|
+|12:30 - 1:30| Lunch break|
+|1:30 - 1:45| Pairing Contract |
+|1:45 - 4:00| Pairing Lab: OO Person|
+|4:00 - 4:15| Feedback form + feedbacking your partner |
+|4:00 - 6:00| Homework Labs |
+
+#### Self-check questions
+- How do I recognize a class variable? How do I recognize an instance variable? 
+- How do I write a class method? And instance method?
+- What is `self`? How do I know if the `self` will be a class or an instance?
+- How can I check what `self` denotes?
+- How can I store all instances of the same class? 
+
+#### Day labs list
+Topics In OO - Class Variables And Methods In Ruby
+- Introduction To Class Variables And Methods In Ruby
+- **Class Variables And Methods** ⭐️
+- **Remembering Objects** ⭐️
+- **Class Variables And Methods Lab** ⭐️
+- OO Basics With Class Constants
+- Private Methods
+- **Class Variables And Methods Quiz** ⭐️
+- **Class Variables And Methods Bookend** ⭐️
+
+Topics In OO - Advanced Class Methods In Ruby
+- Introduction To Advanced Class Methods In Ruby
+- **Advanced Class Methods** ⭐️
+- Advanced Class Methods Lab
+- **Puppy Lab** ⭐️
+- **Advanced Class Methods Quiz** ⭐️
+- **Advanced Class Methods Bookend** ⭐️
+
+#### Homework Labs
+Topics In OO - Object Relationships In Ruby
+- **Introduction To Object Relationships In Ruby** ⭐️
+- Basics Of Object Relationships
+- **Belongs To Object Lab** ⭐️
+- **Has Many Object** ⭐️
+- **Has Many Object Lab** ⭐️
+- Collaborating Objects
+- Collaborating Objects Lab
+
+### W1 Wednesday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 10:00| Day Labs|
+|10:00 - 11:00| Lecture: Ruby relations (one-to-many)|
+|11:05 - 11:35| Discussion Questions: Self|
+|11:35 - 12:30| Day Labs|
+|12:30 - 1:30| Lunch break|
+|1:30 - 3:30 | Pairing lab: OO My pets |
+|3:30 - 6:00| Homework Labs |
+
+#### Self-check questions
+- 
+
+#### Day labs list
+- Catch up on previous labs
+
+#### Homework Labs
+- OO Banking
+- **Has Many Objects Through** ⭐️
+- **Has Many Objects Through Lab** ⭐️
+- **Object Relationships Quiz** ⭐️
+- **Object Relationships Bookend** ⭐️
+
+### W1 Thursday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 10:00| Day Labs|
+|10:00 - 11:00| Lecture: Ruby relations (many-to-many)|
+|11:05 - 12:30| Discussion Questions: Ruby Collections and Classes Group|
+|12:30 - 1:30| Lunch break|
+|1:30 - 4:00| Pairing Lab: OO Boating School|
+|4:00 - 6:00| Homework Labs |
+
+#### Self-check questions
+- 
+
+#### Day labs list
+- Catch up on previous labs
+
+#### Homework Labs
+Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
+- **OO Art Gallery** ⭐️
+- **Animal Zoo** ⭐️
+- **OO Challenge Relationships Practice(all easy ones)** ⭐️
+- OO Has Many Through Template
+
+
+### W1 Friday
+
+| Time | Activity |
+| - | - |
+|9:00 - 9:30| Take attendance on Slack |
+|9:00 - 10:00| Day Labs|
+|10:00 - 11:00| Lecture: Boating School Review|
+|11:05 - 12:30| AMA: Mod5 folks|
+|12:30 - 1:30| Lunch break|
+|1:30 - 3:30| Small group review: OO Kickstarter |
+|3:45 - 4:45| Kahoot quiz |
+|4:45 - 5:45| Feelings |
+
+
+#### Self-check questions
+- 
+
+#### Day labs list
+- Catch up on previous labs
+
+#### Homework Labs
+**TOP PRIORITY: Code Challenge Practice Labs** ⭐️⭐️⭐️
+Metaprogramming In Ruby(all)
+Configuring Ruby Applications(all)
+Topics In OO - Object Inheritance In Ruby
+- Introduction To Object Inheritance In Ruby
+- **Intro To Inheritance** ⭐️
+- **Intro To Inheritance Lab** ⭐️
+- Intro To Modules
+- Intro To Modules Lab
+- **Super** ⭐️
+- **Super Lab** ⭐️
+- **Object Inheritance Quiz** ⭐️
+- **Object Inheritance Bookend** ⭐️
