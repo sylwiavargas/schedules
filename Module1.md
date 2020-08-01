@@ -58,11 +58,12 @@ Week one of every module is designated for you to get exposure to different topi
 - write your own classes,
 - create your own methods for strings,
 - use getter and setter methods for attributes,
-- explain what `self` is to each other,
+- be able to check what `self` denotes,
 - connect two (or more!) classes together,
+- draw domain models,
 - use `map`, `find`, `select` and `each` on instances of classes.
 
-<hr style="height:1px" />
+<!-- <hr /> -->
 
 ### W1 Monday
 
@@ -119,7 +120,7 @@ Topics In OO - Self In Ruby
 - **Self Quiz** ⭐️
 - **Self Bookend** ⭐️
 
-<hr style="height:1px" />
+<!-- <hr /> -->
 
 ### W1 Tuesday
 
@@ -172,7 +173,7 @@ Topics In OO - Object Relationships In Ruby
 - Collaborating Objects
 - Collaborating Objects Lab
 
-<hr>
+<!-- <hr> -->
 
 ### W1 Wednesday
 
@@ -185,7 +186,8 @@ Topics In OO - Object Relationships In Ruby
 |11:35 - 12:30| Day Labs|
 |12:30 - 1:30| Lunch break|
 |1:30 - 3:30 | Pairing lab: OO My pets |
-|3:30 - 6:00| Homework Labs |
+|3:30 - 5:30| Homework Labs |
+|5:30 - 6:00| Stand Down |
 
 #### Self-check questions
 - 
@@ -200,7 +202,7 @@ Topics In OO - Object Relationships In Ruby
 - **Object Relationships Quiz** ⭐️
 - **Object Relationships Bookend** ⭐️
 
-<hr style="height:1px" />
+<!-- <hr /> -->
 
 ### W1 Thursday
 
@@ -227,7 +229,7 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 - **OO Challenge Relationships Practice(all easy ones)** ⭐️
 - OO Has Many Through Template
 
-<hr style="height:1px" />
+<!-- <hr /> -->
 
 ### W1 Friday
 
