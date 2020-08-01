@@ -13,7 +13,6 @@
 ---
 
 ## Mod1 Expectations
-<link rel="stylesheet" type="text/css" media="all" href="schedules_stylesheet.css" />
 Welcome to Module 1, where we will expand and deepen your understanding of Ruby. In the next three weeks, you should become more comfortable with writing Ruby in Object Oriented paradigm, combine it with a database and finally, create your own CLI. Please don't panic -- we will guide you through this process. 
 
 In order to take most of this mod, please take these pieces of advice to heart:
@@ -34,19 +33,19 @@ In order to not leave you feeling tricked, I will gradually fill out this table 
 
 <table>
 <tr>
-    <td style="text-align:center" width="150px"> 🥚 </td>
-    <td style="text-align:center" width="150px"> 🥣 </td>
-    <td style="text-align:center" width="150px"> 🎂 </td>
+    <td> 🥚 </td>
+    <td> 🥣 </td>
+    <td> 🎂 </td>
 </tr>
 <tr>
-    <td style="text-align:center" width="150px"> <code>def name=(name)</code> </td>
-    <td style="text-align:center" width="150px"> ? </td>
-    <td style="text-align:center" width="150px"> ? </td>
+    <td> <code>def name=(name)</code> </td>
+    <td> ? </td>
+    <td> ? </td>
 </tr>
 <tr>
-    <td style="text-align:center" width="150px"> <code>def name</code> </td>
-    <td style="text-align:center" width="150px"> ? </td>
-    <td style="text-align:center" width="150px"> ? </td>
+    <td> <code>def name</code> </td>
+    <td> ? </td>
+    <td> ? </td>
 </tr>
 </table>
 
@@ -63,7 +62,8 @@ Week one of every module is designated for you to get exposure to different topi
 - connect two (or more!) classes together,
 - use `map`, `find`, `select` and `each` on instances of classes.
 
-<p style="margin-left:20%">👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 </p> 
+<hr 👾/>
+
 ### W1 Monday
 
 | Time | Activity |
@@ -119,7 +119,8 @@ Topics In OO - Self In Ruby
 - **Self Quiz** ⭐️
 - **Self Bookend** ⭐️
 
-<p style="margin-left:20%">👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 </p> 
+<hr 👾/>
+
 ### W1 Tuesday
 
 | Time | Activity |
@@ -171,7 +172,8 @@ Topics In OO - Object Relationships In Ruby
 - Collaborating Objects
 - Collaborating Objects Lab
 
-<p style="margin-left:20%">👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 </p> 
+<hr>
+
 ### W1 Wednesday
 
 | Time | Activity |
@@ -198,7 +200,8 @@ Topics In OO - Object Relationships In Ruby
 - **Object Relationships Quiz** ⭐️
 - **Object Relationships Bookend** ⭐️
 
-<p style="margin-left:20%">👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 👾 </p> 
+<hr 👾/>
+
 ### W1 Thursday
 
 | Time | Activity |
@@ -262,3 +265,27 @@ Topics In OO - Object Inheritance In Ruby:
 - **Object Inheritance Bookend** ⭐️
 
 ---
+
+<style>
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: '👾 👾 👾';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+td{
+    text-align: center;
+    width: 150px;
+}
+</style>
