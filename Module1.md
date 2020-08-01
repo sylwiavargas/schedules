@@ -82,9 +82,13 @@ Week one of every module is designated for you to get exposure to different topi
 |5:30 - 6:00| Stand Down |
 
 #### Self-check questions
-- What are objects in Ruby? What is "behavior" and "data"?
-- What are "getter" and "setter" methods? How are they different? Why do we need them? What is the danger of mistaking them?
-- If I create two instances of a Dog class with exactly same attributes, will they be the same attribute?
+- Morning lecture: 
+    - What are objects in Ruby? What is "behavior" and "data"?
+    - What is a class and instance? 
+    - How can I hack Ruby classes (e.g. String)? Why would I? 
+- Afternoon lecture: 
+    - What are "getter" and "setter" methods? How are they different? Why do we need them? What is the danger of mistaking them?
+    - If I create two instances of a Dog class with exactly same attributes, will they be the same attribute?
 
 #### Day labs list
 Introduction To Object-Orientation In Ruby:
