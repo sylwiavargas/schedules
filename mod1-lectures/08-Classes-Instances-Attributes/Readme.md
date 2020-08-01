@@ -11,14 +11,17 @@ Now that we don't create a hash every single time we want to create a dog object
 
 <img src="buddy-the-elf.jpg" height="200px" width="auto" style="display:inline"  alt="a still from the Elf movie picturing Will Ferrel as an assembly line elf preparing toys for kids">
 
-Our elf needs to assemble thousands of different objects and each time checks the manual attached to them. Let's create a dog now:
-
+Our elf needs to assemble thousands of different objects and each time checks the manual attached to them. For instance, when we tell Ruby to create a dog:
+```ruby
+    floofy = Dog.new
+```
+this is what might be happening:
+<img src="dog-rb-1.png" height="200px" width="auto" style="display:inline"  alt="an ikea-like manual">
 
 ## Pass arguments to `new` by defining an `initialize` method in class
 * Every dog needs some info:
     * fav_snack
     * name 
-    How we assign those values?
 
     ```ruby
     def initialize(name_argument, fav_snack_argument)
@@ -26,10 +29,14 @@ Our elf needs to assemble thousands of different objects and each time checks th
         @fav_snack = fav_snack_argument
     end
     ```
+    
+    How we assign those values? Let's add some attributes to the manual:
+    <img src="dog-rb-2.png" height="300px" width="auto" style="display:inline"  alt="an ikea-like manual">
+
 
     * What is `@fav_snack`? //instance variable
     * Define instance variable
-    * `floofy.fav_snack = “Scooby snacks`
+    * `floofy.fav_snack = “bone"`
     * `floofy.fav_snack`
 
     Now, try getting only the name:
