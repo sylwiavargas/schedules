@@ -8,13 +8,5 @@ class String
 
 end
 
-
-
-
-
-
-
-
-
 binding.pry
 0

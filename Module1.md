@@ -60,6 +60,7 @@ Week one of every module is designated for you to get exposure to different topi
 - write your own classes,
 - create your own methods for strings,
 - use getter and setter methods for attributes,
+- add instance and class methods,
 - be able to check what `self` denotes,
 - connect two (or more!) classes together,
 - draw domain models,
@@ -84,10 +85,13 @@ Week one of every module is designated for you to get exposure to different topi
 #### Self-check questions
 - Morning lecture: 
     - What are objects in Ruby? What is "behavior" and "data"?
+    - How do I write a class in Ruby?
+    - How do I create a new instance of the class?
     - What is a class and instance? 
     - How can I hack Ruby classes (e.g. String)? Why would I? 
 - Afternoon lecture: 
-    - What are "getter" and "setter" methods? How are they different? Why do we need them? What is the danger of mistaking them?
+    - What are "getter/reader" and "setter/writer" methods? How are they different? Why do we need them? What is the danger of mistaking them?
+    - What is the difference between `attr_reader`, `attr_writer` and `attr_accessor`?
     - If I create two instances of a Dog class with exactly same attributes, will they be the same attribute?
 
 #### Day labs list
@@ -142,7 +146,8 @@ Topics In OO - Self In Ruby
 |4:00 - 6:00| Homework Labs |
 
 #### Self-check questions
-- How do I recognize a class variable? How do I recognize an instance variable? 
+- How do I recognize a class variable? How do I recognize an instance variable?
+- How is instance variable (`@name`) different from just regular variable (`name`)?
 - How do I write a class method? And instance method?
 - What is `self`? How do I know if the `self` will be a class or an instance?
 - How can I check what `self` denotes?
