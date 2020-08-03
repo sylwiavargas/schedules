@@ -65,7 +65,7 @@ Transform `names` into a string with all the names separated by a comma.
     Dog.new()
     ```
     * Ruby assigns this object an id to this object in the computer's memory -- think about it like ikea warehouse aisles with same objects stored at the same address (e.g. aisle 14, bin 4, up). 
-    <img src="ikea_peoduct_tag.jpeg" height="200px" width="auto" style="display:inline" alt="ikea product tag">
+    <img src="ikea_product_tag.jpeg" height="200px" width="auto" style="display:inline" alt="ikea product tag">
     <img src="ikea_warehouse.jpg" height="200px" width="auto" style="display:inline"  alt="ikea warehouse aisle">
     
     To check the number, you can run: `Dog.new().object_id`
