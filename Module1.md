@@ -17,20 +17,20 @@
 Welcome to Module 1, where we will expand and deepen your understanding of Ruby. In the next three weeks, you should become more comfortable with writing Ruby in Object Oriented paradigm, combine it with a database and finally, create your own CLI. Please don't panic -- we will guide you through this process. 
 
 In order to take most of this mod, please take these pieces of advice to heart:
-- do your labs and make sure to at least skim the priority ones before the [lecture][lecture-link];
+- do your labs and make sure to at least skim the priority ones before the lecture;
 - if anything is unclear, recognize it early and act on it: verbalize a question, google it, ask a peer or on [the questions channel](https://flatiron-school.slack.com/archives/C018TV7P7UG), ask a coach (in this order);
-- check yourself for understanding -- in the schedule section you will find tasks/questions that help you self-check.
+- check yourself for understanding -- you will find tasks/questions in the schedule section that help you self-check.
 
-One thing to remember is that Ruby was designed to make your life easier. Now, because you don't have much experience with other programming languages, it may be difficult at times to trust that this is the best it gets but please take the best practices I share in the [lecture][lecture-link] to heart. It will all make sense. 
+One thing to remember is that **Ruby was designed to make your life easier**. Now, because you don't have much experience with other programming languages, it may be difficult at times to trust that this is the best it gets but please take the best practices I share in the lecture to heart. It will all make sense. 
 
-Lastly, a point that often frustrates students is that we first learn how something works under the hood, then only learn that Ruby has a handy-dandy tool/abstracted method for that, and then we learn that there's even more ✨ magic ✨ to it. "Why couldn't we just learn the magic?", we often hear. Well, think about it this way: 
-- 🎂 you may just go to the bakery and buy **a ready-made Red Velvet cake**. Sure, eeveryone will be happy. However, does this make you a good pastry chef? No. 
-- 🥣 Okay, so you can go to a store and buy **a cake mix** and you make it at home. That's better, you can customize it a bit. 
-- 🥚 However, the true chef would **make Red Velvet cake from scratch**: using eggs, (gluten-free or standard) flour and other ingredients, control sugar measurements and the ultimate shape and height of the cake.
+Lastly, a point that often frustrates students is that we first learn how something works under the hood (or, do it the long way), then learn that Ruby has a handy-dandy tool/abstracted method to do it all in just one line, and only then we learn that there's even more ✨ magic ✨ to use. "Why couldn't we just learn the magic?", we often hear. Well, think about it this way: 
+- 🎂 you may just go to the bakery and buy **a ready-made Red Velvet cake**. Sure, everyone will be happy. However, does this make you a good pastry chef? No. 
+- 🥣 Okay, so you can go to a store and buy **a cake mix** and you bake it at home. You can customize it a bit and while that doesn't make you a chef, you certainly know at least how the oven works. 
+- 🥚 However, the true chef would **make a Red Velvet cake from scratch**: using eggs, flour (gluten-free or wholewheat) and other ingredients, control sugar measurements and the ultimate shape and height of the cake.
 
 Same with Ruby and software development: you could just skip a few steps and get right to the magic but if you ever wanted to customize the magic, you need to know how it's working. 
 
-In order to not leave you feeling tricked, I will gradually fill out this table marking how topics relate to each other:
+In order to not leave you feeling tricked, I will gradually fill out this table marking how topics relate to each other so you see how what you learn actually has a purpose:
 
 <table>
 <tr>
@@ -56,9 +56,8 @@ Have a question? [Ask us!](https://flatiron-school.slack.com/archives/C018TV7P7U
 
 ## Week 1 Schedule
 
-Week one of every module is designated for you to get exposure to different topics that you will consolidate over the following weekend and the days before the code challenge. In Mod1Week1 you will:
+Week one of every module is designated for you to get exposure to different topics that you will consolidate over the following weekend and the days before the code challenge and then practice further in the project week. Usually, you will get **A LOT** of labs in the first days -- please know you will have time to finish them by the end of the week and focus initially on the priority ones. In Mod1 Week1 you will:
 - write your own classes,
-- create your own methods for strings,
 - use getter and setter methods for attributes,
 - add instance and class methods,
 - be able to check what `self` denotes,
@@ -66,6 +65,7 @@ Week one of every module is designated for you to get exposure to different topi
 - draw domain models,
 - use `map`, `find`, `select` and `each` on instances of classes.
 
+These are the skills you need to prioritize when studying this week. Please take every opportunity to write code. If you're lacking prompts from labs, just look around yourself and write a code description of your room (your room being one class, with other classes being furniture, people, plants, etc. -- add aspecific behaviors and interdependencies, etc.).
 
 ### W1 Monday
 
@@ -86,8 +86,8 @@ Week one of every module is designated for you to get exposure to different topi
 - Morning lecture: 
     - What are objects in Ruby? What is "behavior" and "data"?
     - How do I write a class in Ruby?
-    - How do I create a new instance of the class?
     - What is a class and instance? 
+    - How do I create a new instance of the class?
     - How can I hack Ruby classes (e.g. String)? Why would I? 
 - Afternoon lecture: 
     - What are "getter/reader" and "setter/writer" methods? How are they different? Why do we need them? What is the danger of mistaking them?
@@ -149,7 +149,7 @@ Topics In OO - Self In Ruby
 - How do I recognize a class variable? How do I recognize an instance variable?
 - How is instance variable (`@name`) different from just regular variable (`name`)?
 - How do I write a class method? And instance method?
-- What is `self`? How do I know if the `self` will be a class or an instance?
+- What is `self`? How do I know if the `self` will denote a class or an instance?
 - How can I check what `self` denotes?
 - How can I store all instances of the same class? 
 
@@ -189,16 +189,25 @@ Topics In OO - Object Relationships In Ruby
 | - | - |
 |9:00 - 9:30| Take attendance on Slack |
 |9:00 - 10:00| Day Labs|
-|10:00 - 11:00| [Lecture][lecture-link]: Ruby relations (one-to-many)|
-|11:05 - 11:35| Discussion Questions: Self|
-|11:35 - 12:30| Day Labs|
+|10:00 - 10:45| [Lecture][lecture-link]: Ruby relations (domain modelling)|
+|10:45 - 11:15| Discussion Questions: Self|
+|11:15 - 12:30| Labs (Day or Homework)|
 |12:30 - 1:30| Lunch break|
-|1:30 - 3:30 | Pairing lab: OO My pets |
-|3:30 - 5:30| Homework Labs |
+|1:30 - 2:30 | [Lecture][lecture-link]: Ruby relations (one-to-many)|
+|2:35 - 2:45 | Pairing contract |
+|2:45 - 4:45 | Pairing lab: OO My pets |
+|4:45 - 5:00 | Feedback form & feedbacking your partner |
+|5:00 - 5:30| Homework Labs |
 |5:30 - 6:00| Stand Down |
 
 #### Self-check questions
-- 
+- **Morning lecture**:
+    - What examples (at least three) are there for one-to-many relationship type?
+    - How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?
+- **Afternoon lecture**:
+    - What does Signle Source of Truth Principle mean?
+    - What steps do I need to do to connect two 
+    - What is the naming convention for a class method and for an instance method?
 
 #### Day labs list
 - Catch up on previous labs
@@ -224,7 +233,11 @@ Topics In OO - Object Relationships In Ruby
 |4:00 - 6:00| Homework Labs |
 
 #### Self-check questions
-- 
+- What examples (at least three) are there for many-to-many relationship type?
+- How do I draw Entity Relationship Diagram (ERD, or domain model) to represent this type of the relationship?
+- How many models do I need to represent the relationship between e.g. flights and passengers? 
+- Where should the data about the passengers live? Where should the data about the flights live? 
+- Can I store same piece of data in two places? 
 
 #### Day labs list
 - Catch up on previous labs
@@ -243,8 +256,8 @@ Additional Practice: Object Oriented Ruby (Practice labs for Code Challenge)
 | - | - |
 |9:00 - 9:30| Take attendance on Slack |
 |9:00 - 10:00| Day Labs|
-|10:00 - 11:00| [Lecture][lecture-link]: Boating School Review|
-|11:05 - 12:30| AMA: Mod5 folks|
+|10:00 - 11:30| [Lecture][lecture-link]: Boating School Review|
+|11:35 - 12:30| AMA: Mod5 folks|
 |12:30 - 1:30| Lunch break|
 |1:30 - 3:30| Small group review: OO Kickstarter |
 |3:45 - 4:45| Kahoot quiz |
