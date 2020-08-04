@@ -1,10 +1,11 @@
 # Class & Methods
 
 ## LGs:
-- [ ] Create instance methods and class methods
-- [ ] Be able to check what `self` is
+- [ ] Revise what we did yesterday: create a class and an instance with data (attributes) and instance methods (a behavior)
+- [ ] Create class methods
+- [ ] Check what `self` is
 - [ ] Call methods on the implicit or explicit `self`
-- [ ] Explain the need for variable scope
+- [ ] Explain the difference between `variable`, `@variable` and `@@variable`
 
 ## Create instance methods and class methods
 * What is an **instance method**?
@@ -15,7 +16,7 @@
         puts "woof"
     end
 ```
-We invoke it by chaining it to the Dog variable: `floofy.bark`
+We invoke it by chaining it to the Dog variable: `chaos.bark`
 
 * What is a **class method**?
     * Now, we need to store all our objects in one place. Let's create a class variable (`@@all`) that will become a box in which we can put all instance variables:
@@ -38,9 +39,6 @@ We invoke it by chaining it to the Dog variable: `floofy.bark`
 ## Be able to check what `self` is
 * What is `self`?
     * "`self` is a special variable that points to the object/class that "owns" the currently executing code."
-    * how do we know what `self` is? Look where it's placed: if it's placed only inside a method body, `self` will be what you call the method on; if it's placed in the class (e.g. in the method name), `self` will denote the class;
-    * if you want your method to act on the whole class -- name it beginning with `self` (e.g. `self.all`)
-    * if you want your method to act on an instance -- you just need the method name (e.g. `bark`)
 * Let's check what `self` is in the `initialize` method
 * Let's add each new dog to the box of all dogs:
 ```ruby
@@ -55,7 +53,7 @@ Now, after we've run this method a couple of times, we will have a couple of ins
 
 ```ruby
     Dog.all
-# => [#<Dog:0x00007fad90835500 @breed="bone", @name="Floofy">,#<Dog:0x00007fad8e27f6f8 @breed="bone", @name="Mitzi">,#<Dog:0x00007fad8e3963e8 @breed="fish", @name="Jewel">,#<Dog:0x00007fad8f11cb70 @breed="snacks", @name="Chaos">]
+# => [#<Dog:0x00007fad90835500 @breed="bone", @name="chaos">,#<Dog:0x00007fad8e27f6f8 @breed="bone", @name="Mitzi">,#<Dog:0x00007fad8e3963e8 @breed="fish", @name="Jewel">,#<Dog:0x00007fad8f11cb70 @breed="snacks", @name="Chaos">]
 ```
 
 ## Let's see the difference between the two:
@@ -68,14 +66,17 @@ def self.who_am_i
     puts "I am #{self}"
 end
 ```
+* how do we know what `self` is? Look where it's placed: if it's placed only inside a method body, `self` will be what you call the method on; if it's placed in the class (e.g. in the method name), `self` will denote the class;
+    * if you want your method to act on the whole class -- name it beginning with `self` (e.g. `self.all`)
+    * if you want your method to act on an instance -- you just need the method name (e.g. `bark`)
 
 Now, will any of these work?
 ```ruby
 def who_am_i
-    puts "I am #{self.name}"
-    puts "I am #{name}" 
-    puts "I am #{@name}"
-    puts "I am #{self.@name}"
+    puts "I am #{self.name}" #this is an example of explicit self
+    puts "I am #{name}" #implicit self: name is actually a method given in attr_accessor that returns the instance variable @name
+    puts "I am #{@name}" #no self is called in this case: it is just an instance variable
+    puts "I am #{self.@name}" #this won't work because there's no method called "@name" not can there be as "@" is reserved for instance variables
 end
 ```
 
