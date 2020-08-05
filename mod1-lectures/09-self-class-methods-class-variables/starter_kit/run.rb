@@ -8,7 +8,7 @@ class Dog
     def initialize(name_argument, fav_snack_argument, breed_argument)
         @name = name_argument
         @fav_snack = fav_snack_argument
-        @breed  = breed_argument
+        @@breed = breed_argument
         @number_of_legs = 4
     end
 
