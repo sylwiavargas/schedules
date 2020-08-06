@@ -3,10 +3,11 @@
 
 ## LGs:
 - [ ] Revise one-to-many
-- [ ] Implement both sides of a many to many relationships
 - [ ] Practice keeping groups of data related to classes on the class as a class variable
-- [ ] Demonstrate Single Source of Truth by not storing collections of objects on other objects
-- [ ] Demonstrate Single Source of Truth by storing objects only in one place (the class where they belong to)
+- [ ] Practice domain modelling 
+- [ ] Demonstrate Single Source of Truth by not storing collections of objects on other objects and storing objects only in one place (the class where they belong to)
+- [ ] Implement both sides of a many to many relationships
+
 
 ## Outline
 
