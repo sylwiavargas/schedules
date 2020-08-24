@@ -46,6 +46,6 @@ The deliverables are thought to be just guiding points for you and also for the 
 - Delete an instance using a `button_to`
 - Test it online: click through, update a few instances, check in `rails console` if they have been deleted
 
-## 7-8: auth or clearing up blurry parts
+### 7-8: auth or clearing up blurry parts
 
 ### 9: Styling
