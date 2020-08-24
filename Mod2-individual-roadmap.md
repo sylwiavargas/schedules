@@ -25,7 +25,7 @@ The deliverables are thought to be just guiding points for you and also for the 
 - Add `read` action in controllers and routes
 - Create an index page that has a list of multiple instances that links to their respective show pages
 - On at least one show page, show all of the instance’s associations
-- Test it online: click through, check different URLs
+- Test the read functionality online: click through, check different URLs
 
 
 ### 4: CREATE functionality 
@@ -33,18 +33,18 @@ The deliverables are thought to be just guiding points for you and also for the 
 - Add a form and a button leading to it
 - Create a new instance of each model
 - Create an association using `collection_select`
-- Test it online: click through, create a few instances, check in `rails console` if they have been created
+- Test the create functionality online:  click through, create a few instances, check in `rails console` if they have been created
 
 ### 5: UPDATE functionality
 - Add `update` in controllers and routes
 - Add an appropriate form and a button leading to it
-- Test it online: click through, update a few instances, check in `rails console` if they have been updated
+- Test the update functionality online: click through, update a few instances, check in `rails console` if they have been updated
 
-### 5: DELETE functionality
+### 6: DELETE functionality
 - Add `delete` in controllers and routes
 - Add a form and a button leading to it
 - Delete an instance using a `button_to`
-- Test it online: click through, update a few instances, check in `rails console` if they have been deleted
+- Test the delete functionality online: click through, update a few instances, check in `rails console` if they have been deleted
 
 ### 7-8: auth or clearing up blurry parts
 
