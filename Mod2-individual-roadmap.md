@@ -46,6 +46,6 @@ The deliverables are thought to be just guiding points for you and also for the 
 - Delete an instance using a `button_to`
 - Test the delete functionality online: click through, update a few instances, check in `rails console` if they have been deleted
 
-### 7-8: implement auth or debug
+### 7-8: debug or implement auth (optional)
 
 ### 9: Styling
