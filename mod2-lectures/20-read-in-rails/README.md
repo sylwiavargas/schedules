@@ -1,5 +1,9 @@
 # Rest and Read in Rails
 
+## Post-lecture
+- [video](https://flatironschool.zoom.us/rec/play/7MElcbj8qDw3EoKU5gSDB_9xW47uK_-sh3Ie_qJZmkq2AHcFNlugZLUbZurqUh1rbjh6qMOzpEXKc3JI?autoplay=true&startTime=1598376742000)
+- [chat](https://github.com/learn-co-students/nyc04-seng-ft-071320/blob/master/20-rest-and-read-in-rails/M2W1D2.txt)
+
 ## Table of contents
 - [Mod2 what we will be building 🔧](#mod2-what-we-will-be-building)
 - [Learning Goals 📚](#learning-goals)
@@ -8,6 +12,7 @@
 - [Outline 🗺](#outline)
 - [Helpful Bookmarks 🤓](#helpful-bookmarks)
 - [Rails folder structure 🏠](#rails-folder-structure)
+- [Rails process 🌮](#rails-process)
 - [Rails Commands Reference 👾](#rails-commands-reference)
 
 --- 
@@ -101,6 +106,17 @@ Please read these questions carefully **before** the lecture so that you will kn
 - `app/models` -- a folder where you'll place all your models
 - `app/assets` -- this is where you'd place css stylesheets (we will talk about it twice in weeks 2 and 3)
 
+--- 
+
+## Rails process
+1. `rails new` (or `git clone` and `bundle install`)
+2. `rails g model`, `rails db:migrate`
+3. fill out models, fill out seeds
+4. `rails db:seed`
+5. routes
+6. controllers
+7. views
+8. `rails s` and test it manually ✨
 
 ---
 
