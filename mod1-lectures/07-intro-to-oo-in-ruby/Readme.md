@@ -1,16 +1,17 @@
 # Intro to Object Oriented Programming in Ruby
 
 ## Housekeeping:
-- Roadmap document: expectations, labs, self-check, rubric
-- Lectures divided in two
-- Recording
-- Lecture Code: clone the [class repo](https://github.com/learn-co-students/nyc04-seng-ft-071320)!
-- Breaks: mid-lecture
 - Patricipation: this is an interactive class
-- Do not code along
+- !Do not code along!
 - Questions:
     - Ask lecture-related questions in zoom chat or raise your hands when I open time for qs
     - Ask lab-related questions in Slack
+- Breaks: mid-lecture
+- [Roadmap document](https://github.com/learn-co-students/nyc04-seng-ft-120720/blob/main/Module1.md): expectations, labs, self-check, rubric
+- Lecture Code: clone the [class repo](https://github.com/learn-co-students/nyc04-seng-ft-120720)!
+- Lecture readme released in the morning
+- Recordings: see in [Canvas](https://learning.flatironschool.com/courses/1510/modules/items/92726)
+- [Post-lecture check-in](https://forms.gle/foAk4awTymzn6YAk9)
 
 ## Learning Goals:
 
@@ -19,6 +20,7 @@
 - [ ] Add behavior to the instance of a class
 - [ ] Explain the difference between a class and an instance
 - [ ] Extend a String class
+- [ ] Explain when to use `binding.pry`
 
 ## Define object in programming domain
 * "Everything in Ruby is an object." 
@@ -37,7 +39,7 @@
 
 **TASK:**
 In irb run this code:
-`names = [“Annie”, "Eric", “Isabel”, "Sylwia"]`
+`names = ["Hasibul", "Sylwia", "Michelle", "Signe"]`
 Now, guess: what will we get back if we run  `puts names.class`? Run it and check.
 Transform `names` into a string with all the names separated by a comma. 
 
@@ -62,13 +64,13 @@ Transform `names` into a string with all the names separated by a comma.
     ```
 * How to create new objects for a class?
     ```ruby
-    Dog.new()
+    Dog.new
     ```
     * Ruby assigns this object an id to this object in the computer's memory -- think about it like ikea warehouse aisles with same objects stored at the same address (e.g. aisle 14, bin 4, up). 
     <img src="ikea_product_tag.jpeg" height="200px" width="auto" style="display:inline" alt="ikea product tag">
     <img src="ikea_warehouse.jpg" height="200px" width="auto" style="display:inline"  alt="ikea warehouse aisle">
     
-    To check the number, you can run: `Dog.new().object_id`
+    To check the number, you can run: `Dog.new.object_id`
 
 ## Add behavior to the instance of a class
 * To make it possible for the class instances to "do" something, we need to add a behavior (or, methods). Let's make the dog bark.
@@ -109,3 +111,18 @@ Why not to do it:
 - you may end up overwriting already existing method;
 - it's really rare that you'd need a method on all strings;
 - you may confuse your colleagues;
+
+## HOMEWORK
+- In the `housemate.rb` create a `Housemate` class and add four behaviors to its instances; in the same file, create two instances of the Housemate class and check using `binding.pry` if they do have the behaviors;
+- 💯 Extend the `String` class (monkey-patching) to include a new exciting method; you can test it in `irb` by pasting the code containing the class with the method and then invoking it, e.g.:
+```ruby
+class String
+
+    def excited
+        self.upcase + "!!!"
+    end
+
+end
+
+"hi".excited
+```
