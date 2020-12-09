@@ -2,59 +2,26 @@
 
 ## LGs:
 - [ ] Revise what we did yesterday: create a class and an instance with data (attributes) and instance methods (a behavior)
+- [ ] Practice reading existing code base
 - [ ] Create class methods
 - [ ] Check what `self` is
 - [ ] Call methods on the implicit or explicit `self`
 - [ ] Explain the difference between `variable`, `@variable` and `@@variable`
+- [ ] Learn one programming joke
 
-## Create instance methods and class methods
-* What is an **instance method**?
-    * "An instance method provides functionality to one instance of a class. A method that we run on an instance"
-* Create methods that display message about an instance (a dog)
-```ruby
-    def bark
-        puts "woof"
-    end
-```
-We invoke it by chaining it to the Dog variable: `chaos.bark`
-
-* What is a **class method**?
-    * Now, we need to store all our objects in one place. Let's create a class variable (`@@all`) that will become a box in which we can put all instance variables:
-    ```ruby
-        class Dog
-            @@all = []
-        end
-    ```
-    Let's think about this variable as if it were a big box for the instances:
-    <img src="open-box.jpg" height="200px" width="auto" style="display:inline"  alt="a stock picture of an open box on the grass">
-    * "A class method provides functionality to a class itself. A method that we run on a class and method's name start with self."
-    * Let's create a method that when called on the class, will return the variable:
-    ```ruby
-        def self.all
-            @@all
-        end
-    ```
-
+## Practice reading existing code base
+1. Read code in `run.rb` out loud to each other -> e.g. "this is an initialize method that takes in 4 parameters and then declares an instance variable of X with the value of Y". Answer this question:
+- what are `attr_reader` and `attr_accessor` doing?
+- how many instance variables is every instance carrying? 
+- how many instance methods each instance can perform?
+2. Run the methods that are at the bottom of the file and answer these questions:
+- which method is invoked incorrectly and why?
+- why are we able to run `sit` if `@number_of_legs` does not have an `attr_reader`?
 
 ## Be able to check what `self` is
 * What is `self`?
     * "`self` is a special variable that points to the object/class that "owns" the currently executing code."
 * Let's check what `self` is in the `initialize` method
-* Let's add each new dog to the box of all dogs:
-```ruby
-    def initialize(name, breed)
-        @name = name
-        @breed = breed
-        @@all << self
-    end
-```
-Now, after we've run this method a couple of times, we will have a couple of instances in that array:
-    <img src="box-of-puppies.jpg" height="200px" width="auto" style="display:inline"  alt="a picture of box with cute puppies">
-
-```ruby
-    Dog.all
-# => [#<Dog:0x00007fad90835500 @breed="bone", @name="chaos">,#<Dog:0x00007fad8e27f6f8 @breed="bone", @name="Mitzi">,#<Dog:0x00007fad8e3963e8 @breed="fish", @name="Jewel">,#<Dog:0x00007fad8f11cb70 @breed="snacks", @name="Chaos">]
-```
 
 ## Let's see the difference between the two:
 ```ruby
@@ -86,6 +53,58 @@ end
 * What is implicit self?
     * "If you call a method in the same object as the context without mentioning `self`, that's implicit self."
 * Which one to use? It's your preference! 
+
+
+## Create instance methods and class methods
+* What is an **instance method**?
+    * "An instance method provides functionality to one instance of a class. A method that we run on an instance"
+* Create methods that display message about an instance (a dog)
+```ruby
+    def bark
+        puts "woof"
+    end
+```
+We invoke it by chaining it to the Dog variable: `chaos.bark`
+
+* What is a **class method**?
+    * How can we keep track of all the dogs we have created? For example:
+    ```ruby
+        dogs = []
+    ```
+    However, this is not efficient -- maybe we can find a better location for the dogs? 
+    * Now, we need to store all our objects in one place. Let's create a class variable (`@@all`) that will become a box in which we can put all instance variables:
+    ```ruby
+        class Dog
+            @@all = []
+        end
+    ```
+    Let's think about this variable as if it were a big box for the instances:
+    <img src="open-box.jpg" height="200px" width="auto" style="display:inline"  alt="a stock picture of an open box on the grass">
+    * "A class method provides functionality to a class itself. A method that we run on a class and method's name start with self."
+    * Let's create a method that when called on the class, will return the variable:
+    ```ruby
+        def self.all
+            @@all
+        end
+    ```
+
+
+## Be able to add each instance to a class variable
+* Let's add each new dog to the box of all dogs:
+```ruby
+    def initialize(name, breed)
+        @name = name
+        @breed = breed
+        @@all << self
+    end
+```
+Now, after we've run this method a couple of times, we will have a couple of instances in that array:
+    <img src="box-of-puppies.jpg" height="200px" width="auto" style="display:inline"  alt="a picture of box with cute puppies">
+
+```ruby
+    Dog.all
+# => [#<Dog:0x00007fad90835500 @breed="bone", @name="chaos">,#<Dog:0x00007fad8e27f6f8 @breed="bone", @name="Mitzi">,#<Dog:0x00007fad8e3963e8 @breed="fish", @name="Jewel">,#<Dog:0x00007fad8f11cb70 @breed="snacks", @name="Chaos">]
+```
 
 
 ## Variable vs instance variable vs class variable

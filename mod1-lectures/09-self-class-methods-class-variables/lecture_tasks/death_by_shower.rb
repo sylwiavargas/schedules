@@ -3,18 +3,22 @@ require 'pry'
 class Person
 
     attr_reader :name
-    attr_accessor :last_hunger_change, :satiation
+    attr_accessor :last_hunger_change, :hunger_level
 
     def initialize(name)
         @name = name
         @last_hunger_change = Time.now
-        @satiation = 3.0
+        @hunger_level = 3.0
         #how fast gets hungry (in sec)
         @hunger_time = 0.1
+        @@all << self
     end
 
     #this is a class variable, you can update it from any point in the class
     @@bubbles = "bubbles everywhere"
+
+    # this array will hold all the instances
+    @@all = []
 
     def shower
         head_n_shoulders
@@ -22,11 +26,11 @@ class Person
 
     #the label of "Head'n'Shoulders" reads: rinse, lather, repeat
     def head_n_shoulders
-        puts "😩😩😩😩😩😩😩😩😩😩 getting hungry: #{@satiation} 😩😩😩😩😩😩😩😩😩😩😩😩"
+        puts "😩😩😩😩😩😩😩😩😩😩 getting hungry: #{@hunger_level} 😩😩😩😩😩😩😩😩😩😩😩😩"
         #check if the person should already get hungry
         if self.check_hunger
-            #if satiation is still ok, just go on with the showering
-            if @satiation >= 1
+            #if hunger_level is still ok, just go on with the showering
+            if @hunger_level >= 1
                 rinse
                 lather
                 head_n_shoulders #repeat, meaning: call itself
@@ -61,11 +65,15 @@ class Person
 
     def check_hunger 
         if hungry_yet? #if check_hunger method returns true
-            #if it's true, the satiation drops
-            @satiation -= 1
+            #if it's true, the hunger_level drops
+            @hunger_level -= 1
             #and we update the last hunger change
             @last_hunger_change = Time.now
         end
+    end
+
+    def self.all
+        @@all
     end
 
 end
