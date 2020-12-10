@@ -50,9 +50,9 @@ Doctor and Patiens
     * ?
 * Let's discuss the methods
     * What are the minimum methods we are going to need?
-      * initialize
-      * .all
-* Create Class.all method for all the classes
+      * `initialize`
+      * `.all`
+* Create `.all` method for all the classes
 
 ## Tasks (10 mins):
 1. Create Patient class with: `initialize` method, `attr_` macro and `.all` method.
@@ -74,16 +74,16 @@ Doctor and Patiens
     * Make sure to pass into a joiner instance the instances of the other two classes.
 
 ## Tasks (10 mins):
-2. Create JOINER class with `initialize` method, `attr_` macros and `.all` method.
-3. Create `#doctors` method is Patient class that return all the doctors who has appoinment with a perticular patient (hint: you need a helper method)
+2. Create the JOINER class with `initialize` method, `attr_` macros and `.all` method.
+3. Create `#doctors` method in the Patient class that return all the doctors who have appoinment with a perticular patient (hint: you need a helper method)
 
 ## Implement both sides of a many to many relationship
 * many to many => one to many + one to many
 * A doctor has how many appointments!
-    * #appointments 
+    * `#appointments` -- all the appointments of the given doctor 
 * A patient has how many appointments!
-    * #appointments 
+    * `#appointments` -- all the appointments of the given patient
 * A doctor has list of patients!
-    * #patients
+    * `#patients` -- all the patients of the given doctor
 * A patients has list of doctors!
-    * #doctors
+    * `#doctors` -- all the doctors of the given patient
