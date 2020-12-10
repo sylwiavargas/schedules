@@ -20,14 +20,6 @@
   * we used `attr_` macros for getters and setters
   * we looked at `self`
 
-
-* Learn about object oriented relationships driven via _deliverables_!
-  * Define terminology, understand the importance of using clear language in programming
-    * Pair programming! Technical interviews!
-  * Introduce new concepts
-  * Convert those concepts to code
-  * Learn how to test our own code (without Learn tests)
-
 ### Define
 
 What do the following mean in plain English? What do they mean in programming?
@@ -57,7 +49,6 @@ _Why do we care so much about codifying and being really specific about the term
   - [ ] `User#bio` returns a short biography for the user. _Should_ be able to change after the user is created.
   - [ ] `User#tweets` returns an array of Tweet instances
   - [ ] `User#post_tweet` takes a message, creates a new tweet, and adds it to the user's tweet collection
-  - [ ] `User.print_tweets` that prints the message of each tweet to the screen in a pretty way
   - [ ] *bonus* `User.most_tweets` returns the instance of the user who has made the most tweets
 
 - [ ] Create a Tweet class. The class should have these methods:

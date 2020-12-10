@@ -3,12 +3,12 @@ require 'pry'
 class Person
 
     attr_reader :name
-    attr_accessor :last_hunger_change, :hunger_level
+    attr_accessor :last_hunger_change, :hunger_level, :hunger_time
 
-    def initialize(name)
+    def initialize(name, hunger_time = 0.1)
         @name = name
         @last_hunger_change = Time.now
-        @hunger_level = 3.0
+        @hunger_level = 5.0
         #how fast gets hungry (in sec)
         @hunger_time = 0.1
         @@all << self
@@ -26,11 +26,11 @@ class Person
 
     #the label of "Head'n'Shoulders" reads: rinse, lather, repeat
     def head_n_shoulders
-        puts "😩😩😩😩😩😩😩😩😩😩 getting hungry: #{@hunger_level} 😩😩😩😩😩😩😩😩😩😩😩😩"
+        puts "😩😩😩😩😩😩😩😩😩😩 getting hungry: #{hunger_level} 😩😩😩😩😩😩😩😩😩😩😩😩"
         #check if the person should already get hungry
         if self.check_hunger
             #if hunger_level is still ok, just go on with the showering
-            if @hunger_level >= 1
+            if hunger_level >= 1
                 rinse
                 lather
                 head_n_shoulders #repeat, meaning: call itself
@@ -60,15 +60,16 @@ class Person
 
     def hungry_yet?
         #check if 0,3s. has passed since last hunger change -- this will result in a boolean (true or false)
-        Time.now - @last_hunger_change >= @hunger_time
+        Time.now - last_hunger_change >= hunger_time
     end
 
     def check_hunger 
         if hungry_yet? #if check_hunger method returns true
             #if it's true, the hunger_level drops
-            @hunger_level -= 1
+            # !!!! THIS NEEDS TO BE AN INSTANCE VAR IF YOU WANT TO USE "-=" operator (method cannot -= from itself)
+            @hunger_level -= hunger_time
             #and we update the last hunger change
-            @last_hunger_change = Time.now
+            last_hunger_change = Time.now
         end
     end
 
@@ -81,7 +82,7 @@ end
 programmer = Person.new("Programmer")
 
 # this code is an illustration of the joke:
-# How did the programmer die in the shower?
+# How did a programmer die in the shower?
 # They read the shampoo bottle: rinse, lather, repeat.
 
 #run this:

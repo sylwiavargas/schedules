@@ -1,8 +1,11 @@
 reruire 'pry'
+# DO NOT CODE IN THIS FILE, SYLWIA WILL USE IT IN THE LECTURE
 
 
 binding.pry
 0
+
+# DO NOT CODE IN THIS FILE, SYLWIA WILL USE IT IN THE LECTURE
 
 
 # 1. Write a Person class.
@@ -11,12 +14,13 @@ binding.pry
 
 # 2a. When creating a new person, we should provide only an argument of a name and we **could** provide an argument of a hunger_time but not necessarily;
 
-# 2b. `hunger_time` should default to 0.01 unless the user passed another value. Moreover, each person should be initialized with this data:
+# 2b. `hunger_time` should default to 0.1 unless the user passed another value. Moreover, each person should be initialized with this data:
 # `last_hunger_level_change` - current time (find a Ruby method that provides that)
-#  `hunger_level` - 5.0
+#  `hunger_level` - 3.0
 
 # 2c. write `attr_` macros for each of the attributes; follow your own judgement but also keep in mind that: 
 # - name will remain unchanged in this class but we will want to read it;
+# - we won't be reading `hunger_time` and `last_hunger_level_change` but we will be changing it. 
 
 # 3. Add an instance behavior `Person#shower`. Its body can be empty, return whatever you want or just puts something.
 
