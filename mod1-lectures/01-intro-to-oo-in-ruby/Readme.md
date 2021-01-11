@@ -39,7 +39,7 @@
 
 **TASK:**
 In irb run this code:
-`names = ["Hasibul", "Sylwia", "Michelle", "Signe"]`
+`names = ["Eric", "Sylwia", "Chase", "Michelle", "Signe"]`
 Now, guess: what will we get back if we run  `puts names.class`? Run it and check.
 Transform `names` into a string with all the names separated by a comma. 
 
