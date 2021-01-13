@@ -8,7 +8,7 @@ class Dog
     def initialize(name_argument, fav_snack_argument, breed_argument)
         @name = name_argument
         @fav_snack = fav_snack_argument
-        @@breed = breed_argument
+        @breed  = breed_argument
         @number_of_legs = 4
     end
 
@@ -30,8 +30,9 @@ class Dog
 
 end 
 
-fluff = Dog.new("Fluffy", "bones", "maltese")
+ruby = Dog.new("Ruby", "bones", "maltese")
 preciosa = Dog.new("Preciosa", "bacon", "corgi")
+sora = Dog.new("Sora", nil , "lab-pit")
 
 binding.pry
 0

@@ -30,8 +30,9 @@ class Dog
 
 end 
 
-fluff = Dog.new("Fluffy", "bones", "maltese")
+ruby = Dog.new("Ruby", "bones", "maltese")
 preciosa = Dog.new("Preciosa", "bacon", "corgi")
+sora = Dog.new("Sora", nil , "lab-pit")
 
 binding.pry
 0

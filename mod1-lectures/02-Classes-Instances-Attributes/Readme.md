@@ -87,12 +87,12 @@ Our dog can already bark, now let's make it spin.
 - [ ] Use `attr_` macros instead of reader and writer methods
 - [ ] Add behavior to a class instance
 
-<!-- In this Phase we will be talking about: -->
+<!-- In this Phase we will be talking about:
 - local_vars
 - @instance_var
 - @@class_vars
-- CONSTS
-- $global_vars
+- CONST_vars
+- $global_vars -->
 
 ## Analogy time 
 We no longer create a hash every single time we want to create a dog object. Instead, we created a blueprint (the `Dog class`) for Ruby to do the job for us. For this lecture imagine Ruby as an elf who assembles together gifts for kids:
@@ -134,6 +134,8 @@ this is what might be happening:
         puts sora.name
     ```
 
+    **TASK**: Add two other attributes: `number_of_legs` that's defined when the dog is initialized with the value of 4 and `attitude` which if given no arguments will default to "jolly"
+
 ## Define attribute readers and writers
 * How do we access these values?
     * Getter method allows us to only read the value
@@ -150,6 +152,9 @@ this is what might be happening:
     end
     ```
 
+    **TASK**: Add reader and/or writer methods for the rest of the attributes
+
+
     * Confused what method to write?
         * if you want to have an access to an attribute but don't want to change its value later -> getter/reader method
         * if you want to have an opportunity to change the attribute's value -> setter/writer method
@@ -160,6 +165,8 @@ this is what might be happening:
 * To read attributes: `attr_reader`
 * To write attributes: `attr_writer`
 * For reading & writing: `attr_accessor`
+
+    **TASK**: Replace the reader/writer methods with `attr_` macros
 
 ## Add behavior to the dog instance
 Our dog can already bark, now let's make it spin. 

@@ -2,6 +2,12 @@ require 'pry'
 
 class Person
 
+    #this is a class variable, you can update it from any point in the class
+    @@bubbles = "bubbles everywhere"
+
+    # this array will hold all the instances
+    @@all = []
+
     attr_reader :name
     attr_accessor :last_hunger_change, :hunger_level, :hunger_time
 
@@ -14,11 +20,9 @@ class Person
         @@all << self
     end
 
-    #this is a class variable, you can update it from any point in the class
-    @@bubbles = "bubbles everywhere"
-
-    # this array will hold all the instances
-    @@all = []
+    def self.all
+        @@all
+    end
 
     def shower
         head_n_shoulders
@@ -37,7 +41,7 @@ class Person
             #die from hunger
             else
                 puts "💀 💀 💀 DEAD 💀 💀 💀 "
-                return "#{@name} no more"
+                return "#{name} no more"
             end
         else
         #if not hungry yet, just rinse, lather, repeat
@@ -59,34 +63,33 @@ class Person
     end
 
     def hungry_yet?
-        #check if 0,3s. has passed since last hunger change -- this will result in a boolean (true or false)
+        #check if hunger time has passed since last hunger change -- this will result in a boolean (true or false)
         Time.now - last_hunger_change >= hunger_time
     end
 
     def check_hunger 
         if hungry_yet? #if check_hunger method returns true
             #if it's true, the hunger_level drops
-            # !!!! THIS NEEDS TO BE AN INSTANCE VAR IF YOU WANT TO USE "-=" operator (method cannot -= from itself)
-            @hunger_level -= hunger_time
+            # !!!! THIS NEEDS TO BE AN INSTANCE VAR OR SELF.HUNGER_LEVEL IF YOU WANT TO USE "-=" operator (IMPLICIT self method cannot -= from itself)
+            self.hunger_level -= hunger_time
             #and we update the last hunger change
             last_hunger_change = Time.now
         end
-    end
-
-    def self.all
-        @@all
     end
 
 end
 
 programmer = Person.new("Programmer")
 
+#run this:
+# programmer.shower
+
+
+
+
 # this code is an illustration of the joke:
 # How did a programmer die in the shower?
 # They read the shampoo bottle: rinse, lather, repeat.
-
-#run this:
-# programmer.shower
 
 binding.pry
 0
