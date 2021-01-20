@@ -104,17 +104,17 @@ For ActiveRecord to connect between a model and a table, the model name should b
 ```
 
 About ActiveRecord’s `pluralize` method and non-standard words from the English-centric perspective:
-if the word is of non-English and a relatively new addition to the language or if it’s an entirely made-up word, AR will just add “s” to the end:
+if the word is of non-English and a relatively new addition to the language or if it’s an entirely made-up word, AR will just add "s” to the end:
 
-- “Spaghetti” is already plural but `“Spaghetti”.pluralize` gives us “Spaghettis”
+- "Spaghetti” is already plural but `“Spaghetti”.pluralize` gives us “Spaghettis”
 - “spaghetto” is singlular but `“spaghetti”.pluralize` gives us “spaghettos”
 - “pokemon” is uncountable but it’s gonna be “pokemons”
 - “ąę” will be “ąęs”
 and this is how pluralize deals with the right-to-left alphabets:
 
 ```ruby
-“מה זה“.pluralize
-=> “מה זהs\n”
+"מה זה".pluralize
+=> "מה זהs\n”
 ```
 
 You can override the pluralization by extending the Inflector class:

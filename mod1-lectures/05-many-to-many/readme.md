@@ -14,14 +14,12 @@
 * Quick review of one-to-many:
   * Single Source of Truth Principle:
     - "Class can only store information about their own instances"
-    - "Can’t steal child from other family"
-    - "Don’t add stuff where they are not supposed to be"
   * What is an example of one-to-many relationship:
     - Tweet belongs to a User, User has many Tweets;
-    - Comment belongs to a Video, Video has many Comments;
+    - Leaf belongs to a Tree, Tree has many Leaves;
   * In one-to-many relationship (e.g. Tweet >- User), on which side do I treat the instance as a parameter to initialize to connect the two models?
     - when initializing Tweet, we pass a User instance as an argument;
-    - when initializing Comment, we pass a Video instance as an argument;
+    - when initializing Leaves, we pass a Tree instance as an argument;
   * In one-to-many relationship, can a User have 0 Tweets?
 
 ## How to think about relationships

@@ -16,19 +16,12 @@ def initialize(args_hash)
   @name = args_hash[0]
   @name = args_hash[:name]
 end
+programitcally assigning attributes when an object is initialized
 
-krusty = Clown.new(
-  name: "Krusty", 
-  fears: "Children", 
-  age: 2, 
-  skill: "Juggling Chainsaws"
-)
+krusty = Clown.new(name: "Krusty", fears: "Children", age: 2, skill: "Juggling Chainsaws")
 
 pennywise = Clown.new(
-  age: 12_000, 
-  name: "Pennywise", 
-  fears: "Courage and heart", 
-  skill: "Knows what you're scared of"
+  age: 12_000, name: "Pennywise", fears: "Courage and heart", skill: "Knows what you're scared of"
 )
 
 binding.pry
