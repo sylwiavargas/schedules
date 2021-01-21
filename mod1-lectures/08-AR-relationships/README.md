@@ -12,47 +12,44 @@ Active Record Relationships
 ### Outline
 * Review what we covered so far:
     - What is AR?
-      - MAGIC!!!!!!!!!!
-      - a bridge/interpreter between the SQL world and the Ruby Lalaland
-      - orm
-      - gem -> extension
-      - design pattern
+      - 
+      - 
+      - 
     - What does AR do?
-      - a bridge/interpreter between the SQL world and the Ruby Lalaland
-      - it creates associations between models and tables/database
+      - 
     - When to use SQL and when AR?
-      - up to you but in the project week use AR
+      - 
     - What's the difference between a model and a table?
-      - model/class -> objects/instances
-      - table -> stores the data
+      - model/class -> 
+      - table -> 
     - Can a database have many tables?
       - YES! As many as you **need**
     - What is meant by migration?
       - migration is a blueprint for ActiveRecord to create/change/delete SQL tables
     - Naming conventions in Ruby and AR
-      - model name: singular 
-      - everything else: plural
+      - model name:  
+      - everything else: 
     - Project file structure
     - What is `rake`?
-      - it's a gem
-      - task manager
-      - allows us to automate tasks
+      - 
+      - 
+      - 
     - What is `rake console`?
-      - one of the rake tasks
-      - similar to pry 
-      - it calls on PRY.start -> it knows about our whole app and the database
-      - SUPERPRY!!!
+      - 
+      - 
+      - 
+      - 
     - Difference between `.new` and `.create`
-      - `.new` -> creates a RUBY instance and then you need to use `.save` in order for it to persists in the database
-      - `.create` -> new+save
+      - `.new` -> 
+      - `.create` -> 
     - What is CRUD and what are the examples of methods for each letter?
-      - CRUD -> acronym that stands for "create read update delete"
-      - create: .create
+      - CRUD -> 
+      - create: 
       - read: 
-          - find_by -> accepts a hash (key-value pair) and we perform a search based on an attr
-          - find -> based on id
-      - update: .update (both on an instance and a class)
-      - delete: .destroy (both on an instance and a class)
+          - 
+          - 
+      - update: 
+      - delete: 
 
 ### Setting up relationships
 
@@ -61,29 +58,29 @@ This is our domain model:
 ```
 Plant —————< PlantParenthood >————————— Parent
 :name       :affection (int)         :name
-:color      :favorite(bool)          :free_time
+:color                               :free_time
 :bought(datetime)                    :age
 :fussy(bool)
 ```
 
-- How can we associate a Person with a Plant and vice-versa?
+- How can we associate a Parent with a Plant and vice-versa?
 
 Let's first create the association between Parent and PlantParenthood. **Since It's the PlantParenthood that has the chicken feet on itself, this is the model that should contain the instance ides of others.**
 
 ```ruby
 class PlantParenthood < ActiveRecord::Base
-  def people
-    # Person.all.find{ |person| person.id == self.person_id }
+  def parents
+    # Parent.all.find{ |parent| parent.id == self.parent_id }
     # OR use AR .find
-    Person.find(self.person_id )
+    Parent.find(self.parent_id )
   end
 end
 #...
-class Person < ActiveRecord::Base
+class Parent < ActiveRecord::Base
   def plant_parenthoods
-    # PlantParenthood.all.select{|pp| pp.person_id == self.id}
+    # PlantParenthood.all.select{|pp| pp.parent_id == self.id}
     # OR use AR .where
-    PlantParenthood.where(person_id: self.id)
+    PlantParenthood.where(parent_id: self.id)
   end
 end
 ```
@@ -91,11 +88,11 @@ end
 ## What About a Better Way™️
 
 - ActiveRecord Macros
-  - PlantParenthood model: `belongs_to :plant`, `belongs_to :person`
+  - PlantParenthood model: `belongs_to :plant`, `belongs_to :parent`
   - Plant model `has_many :plant_parenthoods`
-  - Person model `has_many :people`
-- These macros provide **even more** methods, like `plant_instance.person` and `person_instance.plants`
-  - **Major Key🔑**––since a `plant_parenthood` instance BELONGS TO a `person` it should have ONE Person. Therefore the method is `.person`. A person HAS MANY `plant_parenthoods`, therefore the method is `.plant_parenthoods` pay attention to what is singular and what is plural.
+  - Parent model `has_many :parents`
+- These macros provide **even more** methods, like `plant_instance.parents` and `parent_instance.plants`
+  - **Major Key🔑**––since a `plant_parenthood` instance BELONGS TO a `parent` it should have ONE Parent. Therefore the method is `.parent`. A parent HAS MANY `plant_parenthoods`, therefore the method is `.plant_parenthoods` pay attention to what is singular and what is plural.
 
 ### Important Methods from ActiveRecord
 
