@@ -49,7 +49,6 @@ _Why do we care so much about codifying and being really specific about the term
   - [ ] `User#bio` returns a short biography for the user. _Should_ be able to change after the user is created.
   - [ ] `User#tweets` returns an array of Tweet instances
   - [ ] `User#post_tweet` takes a message, creates a new tweet, and adds it to the user's tweet collection
-  - [ ] *bonus* `User.most_tweets` returns the instance of the user who has made the most tweets
 
 - [ ] Create a Tweet class. The class should have these methods:
   - [ ] `Tweet#message` returns a string
@@ -63,3 +62,10 @@ _Why do we care so much about codifying and being really specific about the term
 - What does Single Source of Truth mean?
 - What is a model? Domain? Domain model?
 - What is the relationship between a class and an instance?
+
+### Homework
+- Create all the remaining deliverables that we did not cover in the lecture
+- `Tweet.all_tweet_messages` -- returns an array of messages only (please use an appropriate enumerable method)
+- `Tweet.longest_tweets` -- returns an array of three longest tweets
+- `User.most_tweets` returns the instance of the user who has made the most tweets
+- `User#tweet_messages_only` -- returns an array of messages only (please use an association method and an appropriate enumerable method)

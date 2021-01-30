@@ -7,11 +7,11 @@
     - Ask lecture-related questions in zoom chat or raise your hands when I open time for qs
     - Ask lab-related questions in Slack
 - Breaks: mid-lecture
-- [Roadmap document](https://github.com/learn-co-students/nyc04-seng-ft-120720/blob/main/Module1.md): expectations, labs, self-check, rubric
-- Lecture Code: clone the [class repo](https://github.com/learn-co-students/nyc04-seng-ft-120720)!
+- [Roadmap document](https://github.com/learn-co-students/nyc-seng-ft-020121/blob/main/Phase1.md): expectations, labs, self-check, rubric
+- Lecture Code: clone the [class repo](https://github.com/learn-co-students/nyc-seng-ft-020121)!
 - Lecture readme released in the morning
-- Recordings: see in [Canvas](https://learning.flatironschool.com/courses/1510/modules/items/92726)
-- [Post-lecture check-in](https://forms.gle/foAk4awTymzn6YAk9)
+- Recordings: see in [Canvas](https://learning.flatironschool.com/courses/2294/modules/items/92913)
+- [Post-lecture check-in](https://forms.gle/xRzstYuiSgYZPe2A7)
 
 ## Learning Goals:
 
@@ -47,7 +47,8 @@ Transform `names` into a string with all the names separated by a comma.
 * Creating hash for dogs with dog's type and breed:
     ```ruby
     dog1 = {"name": "ruby", "breed": "maltese"}
-    dog2 = {"namne": "floof", "breed": "corgi"}
+    dog2 = {"namne": "sora", "breed": "lab-pit"}
+    dog3 = {"name": "lilo", "breed": "fluffy"}
     ```
 * Why don’t we want to do this? 
     * We don't want to write your code over and over again.

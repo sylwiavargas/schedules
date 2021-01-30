@@ -113,4 +113,3 @@ Now, after we've run this method a couple of times, we will have a couple of ins
 - `@@variable` -> this is a class variable; it is used to e.g. store all the instances (think of the box with puppies); 
 
 Read more about variables [here](https://medium.com/swlh/hitchhikers-guide-to-ruby-variables-1b4cf83d540c)
-
