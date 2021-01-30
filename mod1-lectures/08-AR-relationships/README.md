@@ -114,3 +114,26 @@ end
   - `Plant.find_by(name: 'Angel's prayer')` will return the plant with a name of 'Angel's prayer'
 
 [Active Record Docs](http://edgeguides.rubyonrails.org/active_record_migrations.html#using-the-up-down-methods)
+
+
+## ERD to finish with
+
+```
+Category :name
+    |
+    ^
+  Plant ----< PlantParenthood >---- PlantParent
+   :species      :plant_id            :name
+   :color        :plant_parent_id     :responsible
+   :bought       :affection           :age
+   :fussy
+   :category_id
+```
+
+## RECIPE FOR DEALING WITH A NEW FILE
+- draw your erd and decide on the attributes
+- create migrations 
+- run migrations + check schema
+- create models
+- add association macros
+- create seed data and run it
