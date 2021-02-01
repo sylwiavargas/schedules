@@ -9,8 +9,15 @@
     - [W1 Thursday](#w1-thursday)
     - [W1 Friday](#w1-friday)
     - [W1 Weekend](#w1-weekend)
-- [Code Challenge Rubric](#code-challenge-rubric)
-- [Terminology](#terminology)
+- [Week 2](#week-2)
+    - [W2 Monday](#w2-monday)
+    - [W2 Tuesday](#w2-tuesday)
+    - [W2 Wednesday](#w2-wednesday)
+    - [W2 Thursday](#w2-thursday)
+    - [W2 Friday](#w2-friday)
+    - [W2 Weekend](#w2-weekend)
+- [Week 3](#week-3)
+    - [Project Week Roadmap](#project-week-roadmap)
 
 ---
 
@@ -416,7 +423,7 @@ Your two main objectives today are:
 
 ---
 
-## Week 3 Schedule
+## Week 3
 
 As you enter Project Week, your main two goals are:
 - practice ActiveRecord and become REALLY comfortable with it: it is more important that you are comfortable with migrations, database changes and querying a database than that you end up with a nice-looking CLI;
