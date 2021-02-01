@@ -7,13 +7,6 @@
 - [ ] Use `attr_` macros instead of reader and writer methods
 - [ ] Add behavior to a class instance
 
-<!-- In this Phase we will be talking about: -->
-- local_vars
-- @instance_var
-- @@class_vars
-- CONSTS
-- $global_vars
-
 ## Analogy time 
 We no longer create a hash every single time we want to create a dog object. Instead, we created a blueprint (the `Dog class`) for Ruby to do the job for us. For this lecture imagine Ruby as an elf who assembles together gifts for kids:
 
@@ -21,7 +14,7 @@ We no longer create a hash every single time we want to create a dog object. Ins
 
 Our elf needs to assemble thousands of different objects and each time checks the manual attached to them. For instance, when we tell Ruby to create a dog:
 ```ruby
-    sora = Dog.new
+    bart = Dog.new
 ```
 this is what might be happening:
 <img src="dog-rb-1.png" height="200px" width="auto" style="display:inline"  alt="an ikea-like manual">
@@ -44,14 +37,14 @@ this is what might be happening:
 
     * What is `@fav_snack`? //instance variable
     * Define instance variable
-    * `sora.fav_snack = “bone"`
-    * `sora.fav_snack`
+    * `bart.fav_snack = “bone"`
+    * `bart.fav_snack`
 
     Now, try getting only the name:
     ```ruby
-        sora = Dog.new("Sora", "lab-pit")
-        puts sora
-        puts sora.name
+        bart = Dog.new("Bart", "maltese")
+        puts bart
+        puts bart.name
     ```
 
 ## Define attribute readers and writers
@@ -84,6 +77,13 @@ this is what might be happening:
 ## Add behavior to the dog instance
 Our dog can already bark, now let's make it spin. 
  <img src="dog-rb-3.png" height="300px" width="auto" style="display:inline"  alt="an ikea-like manual">
+
+<!-- In this Phase we will be talking about: -->
+- local_vars
+- @instance_var
+- @@class_vars
+- CONSTS
+- $global_vars
 
 ## Homework
 
