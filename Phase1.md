@@ -1,22 +1,22 @@
 # Mod 1 Instruction and Schedule for 020121 
 
 ## Table of contents
-- [Phase 1 Expectations](#phase 1-expectations)
-- [Week 1](#week-1)
+- [Phase 1 Expectations](#phase-1-expectations)
+- [Week 1 Description](#week-1)
     - [W1 Monday](#w1-monday)
     - [W1 Tuesday](#w1-tuesday)
     - [W1 Wednesday](#w1-wednesday)
     - [W1 Thursday](#w1-thursday)
     - [W1 Friday](#w1-friday)
     - [W1 Weekend](#w1-weekend)
-- [Week 2](#week-2)
+- [Week 2 Description](#week-2)
     - [W2 Monday](#w2-monday)
     - [W2 Tuesday](#w2-tuesday)
     - [W2 Wednesday](#w2-wednesday)
     - [W2 Thursday](#w2-thursday)
     - [W2 Friday](#w2-friday)
     - [W2 Weekend](#w2-weekend)
-- [Week 3](#week-3)
+- [Week 3 Description](#week-3)
     - [Project Week Roadmap](#project-week-roadmap)
 
 ---
