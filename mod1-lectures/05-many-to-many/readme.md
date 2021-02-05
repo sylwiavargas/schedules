@@ -19,8 +19,9 @@
     - Leaf belongs to a Tree, Tree has many Leaves;
   * In one-to-many relationship (e.g. Tweet >- User), on which side do I treat the instance as a parameter to initialize to connect the two models?
     - when initializing Tweet, we pass a User instance as an argument;
-    - when initializing Leaves, we pass a Tree instance as an argument;
+    - when initializing Book, we pass a Library instance as an argument;
   * In one-to-many relationship, can a User have 0 Tweets?
+    - YES
 
 ## How to think about relationships
 1. For every one (x), how many (y)? 
@@ -85,3 +86,21 @@ Doctor and Patiens
     * `#patients` -- all the patients of the given doctor
 * A patients has list of doctors!
     * `#doctors` -- all the doctors of the given patient
+
+## Code Challenge skills
+In evaluating the code challenge,  we will be checking if you were able to meet the deliverables in time and to demonstrate that you (in random order):
+- understand the difference between instance/class methods -> do you know when to use which (e.g. from reading deliverables) and what the correct syntax is;
+- understand what `self` is and use it correctly (to e.g. create an instance from one side on the other side or to write a class method)
+- you always choose the correct enumerable method for the job
+understand the naming conventions in Ruby (class is capitalized, variables are not; `@instance_variable`, `@@class_variable`)
+- understand the two `attr_` macros and do not overwrite any of them unless you’re building a custom fancy reader/writer (not a deliverable on a code challenge)
+you test your code -> for instance, if you have an `end-of-input` error it tells me that you did not run your code at all;
+- you can set up a one-to-many and many-to-many relationship correctly (you understand which model knows about the other models or that you need to pass the entire instance, not a string of a name)
+- you can access the information from one side on the other side (e.g. `User#tweets`)
+
+BROWNIE POINTS (but also in some cases stuff that if notorious on the opposite side can result in a fail):
+- you use helper methods -> after having written your code, you refactor to  avoid repetitions
+- you name your variables in a descriptive manner without using shortcuts and on the flipside, if I can’t debug your code because you called the vars in a way that I’d need to spend more than 3 minutes to orient myself in your codebase
+- you pseudocode
+- you google and use docs effectively and tell us what you googled in a comment and on the flip side, if we see you used lecture or lab code
+- connected to googling, you can use non-basic methods (e.g. .clamp instead of a huge if/else to limit the number) and on the flip side, if you’re using the wrong iterator but made it work (e.g. map with a condition -> that should be select)
