@@ -64,8 +64,8 @@ In order to not leave you feeling tricked, I will gradually fill out this table 
 </tr>
 <tr>
     <td style="text-align:center" width="150px"> <code>User.new() </code> </td>
-    <td style="text-align:center" width="150px"> <code>User.new("Hasibul")</code> </td>
-    <td style="text-align:center" width="150px"> <code>User.new(username: "Hasibul")</code>  </td>
+    <td style="text-align:center" width="150px"> <code>User.new("Michelle")</code> </td>
+    <td style="text-align:center" width="150px"> <code>User.new(username: "Michelle")</code>  </td>
 </tr>
 <tr>
     <td style="text-align:center" width="150px"> - </td>
@@ -80,16 +80,14 @@ In order to not leave you feeling tricked, I will gradually fill out this table 
 <tr>
     <td style="text-align:center" width="150px"> - </td>
     <td style="text-align:center" width="150px"> <code>User#appointments</code>, that needs to be written out manually</td>
-    <td style="text-align:center" width="150px"> <code>?</code>  </td>
+    <td style="text-align:center" width="150px"> <code> has_many</code>  </td>
 </tr>
 <tr>
     <td style="text-align:center" width="150px"> - </td>
     <td style="text-align:center" width="150px"> <code>User#doctors</code>, that needs to be written out manually</td>
-    <td style="text-align:center" width="150px"> <code>?</code>  </td>
+    <td style="text-align:center" width="150px"> <code>has_many, through:</code>  </td>
 </tr>
 </table>
-
-Have a question? [Ask us!](https://flatiron-school.slack.com/archives/C018TV7P7UG)
 
 ---
 
@@ -118,7 +116,7 @@ These are the skills you need to prioritize when studying this week. Please take
    - How do I write a class in Ruby?
    - What is a class and instance? 
    - How do I create a new instance of the class?
-   - How can I hack Ruby classes (e.g. String)? Why would I? 
+   - How can I hack Ruby classes (e.g. String)? Why would I? Why should I not? 
 
 #### Post-Lecture Homework: 
 - In the `housemate.rb` create a `Housemate` class and add four behaviors to its instances; in the same file, create two instances of the Housemate class and check using `binding.pry` if they do have the behaviors;
@@ -383,7 +381,7 @@ IF YOU ARE DONE, there’s this [amazing SQL practice thread that uses real-worl
 - What does CRUD mean?
 - What are examples of ActiveRecord methods associated with each of the CRUD actions? 
 
-#### Self-Check questions for "Lecture: ActiveRecord Associations"
+#### Self-Check questions for "Review: ActiveRecord CRUD"
 - How do I create a table?
 - How do I add a column to a table?
 - How do I change a table?
@@ -395,7 +393,7 @@ IF YOU ARE DONE, there’s this [amazing SQL practice thread that uses real-worl
 - How do I delete all instances at once?
 
 #### Labs
-tba
+- re-do the `ActiveRecord CRUD` lab on your own
 
 ---
 ### W2 Thursday
@@ -413,6 +411,8 @@ tba
 - What are aliases?
 - What are lifecycle methods? What's an example of a lifecycle method?
 
+### Labs
+- `Solo Lab: More Models`
 
 ---
 ### W2 Friday
@@ -420,6 +420,9 @@ tba
 Your two main objectives today are:
 - practice ActiveRecord and use the association methods whenever possible
 - discuss the project ideas with your partner
+
+### Labs
+- `VHS` pairing lab
 
 ---
 
