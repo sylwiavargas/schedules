@@ -360,11 +360,14 @@ IF YOU ARE COMFORTABLE WITH THE MATERIAL SO FAR:
 - Introduction To Using Active Record
     - **Intro To Rake** ⭐️ 
     - **Let's Learn About Migrations** ⭐️ 
+- Here is a [self-paced lecture for tomorrow](https://github.com/sylwiavargas/intro-to-ar) ⭐️ 
 
 IF YOU ARE DONE, there’s this [amazing SQL practice thread that uses real-world data](https://dev.to/zchtodd/sql30-day-1-wildfires-2b02)
 
 ---
 ### W2 Wednesday
+
+Here is a [self-paced lecture: Intro to ActiveRecord](https://github.com/sylwiavargas/intro-to-ar) ⭐️ 
 
 #### Self-Check questions for "Lecture: Intro to ActiveRecord"
 - Why do we have a Seeds file? 
